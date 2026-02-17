@@ -1,0 +1,11 @@
+@model IEnumerable<ProductViewModel>
+
+<h5>Index Page</h5>
+
+@foreach (var product in Model)
+{
+    <p>@product.Name</p>
+    <p>@product.Price</p>
+    <p>@product.Description</p>
+    <p>@product.Category</p>
+}

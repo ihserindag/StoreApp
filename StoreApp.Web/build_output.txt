@@ -1,0 +1,18 @@
+  Geri yüklenecek projeler belirleniyor...
+  Geri yükleme için tüm projeler güncel.
+  StoreApp.Data -> C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Data\bin\Debug\net9.0\StoreApp.Data.dll
+C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Web\Views\_ViewImports.cshtml(1,21): error CS0234: 'Models' tür veya ad alanı adı 'StoreApp.Web' ad alanında yok (bir derleme başvurunuz mu eksik?) [C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Web\StoreApp.Web.csproj]
+C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Web\Views\_ViewImports.cshtml(1,21): error CS0234: 'Models' tür veya ad alanı adı 'StoreApp.Web' ad alanında yok (bir derleme başvurunuz mu eksik?) [C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Web\StoreApp.Web.csproj]
+C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Web\Views\_ViewImports.cshtml(1,21): error CS0234: 'Models' tür veya ad alanı adı 'StoreApp.Web' ad alanında yok (bir derleme başvurunuz mu eksik?) [C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Web\StoreApp.Web.csproj]
+C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Web\Views\_ViewImports.cshtml(1,21): error CS0234: 'Models' tür veya ad alanı adı 'StoreApp.Web' ad alanında yok (bir derleme başvurunuz mu eksik?) [C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Web\StoreApp.Web.csproj]
+
+Oluşturma BAŞARISIZ OLDU.
+
+C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Web\Views\_ViewImports.cshtml(1,21): error CS0234: 'Models' tür veya ad alanı adı 'StoreApp.Web' ad alanında yok (bir derleme başvurunuz mu eksik?) [C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Web\StoreApp.Web.csproj]
+C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Web\Views\_ViewImports.cshtml(1,21): error CS0234: 'Models' tür veya ad alanı adı 'StoreApp.Web' ad alanında yok (bir derleme başvurunuz mu eksik?) [C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Web\StoreApp.Web.csproj]
+C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Web\Views\_ViewImports.cshtml(1,21): error CS0234: 'Models' tür veya ad alanı adı 'StoreApp.Web' ad alanında yok (bir derleme başvurunuz mu eksik?) [C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Web\StoreApp.Web.csproj]
+C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Web\Views\_ViewImports.cshtml(1,21): error CS0234: 'Models' tür veya ad alanı adı 'StoreApp.Web' ad alanında yok (bir derleme başvurunuz mu eksik?) [C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Web\StoreApp.Web.csproj]
+    0 Uyarı
+    4 Hata
+
+Geçen Süre 00:00:01.77

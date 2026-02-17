@@ -1,0 +1,15 @@
+C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Data\bin\Debug\net9.0\StoreApp.Data.deps.json
+C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Data\bin\Debug\net9.0\StoreApp.Data.runtimeconfig.json
+C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Data\bin\Debug\net9.0\StoreApp.Data.dll
+C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Data\bin\Debug\net9.0\StoreApp.Data.pdb
+C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Data\obj\Debug\net9.0\StoreApp.Data.csproj.AssemblyReference.cache
+C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Data\obj\Debug\net9.0\StoreApp.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Data\obj\Debug\net9.0\StoreApp.Data.AssemblyInfoInputs.cache
+C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Data\obj\Debug\net9.0\StoreApp.Data.AssemblyInfo.cs
+C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Data\obj\Debug\net9.0\StoreApp.Data.csproj.CoreCompileInputs.cache
+C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Data\obj\Debug\net9.0\StoreApp.Data.sourcelink.json
+C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Data\obj\Debug\net9.0\StoreApp.Data.dll
+C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Data\obj\Debug\net9.0\refint\StoreApp.Data.dll
+C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Data\obj\Debug\net9.0\StoreApp.Data.pdb
+C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Data\obj\Debug\net9.0\StoreApp.Data.genruntimeconfig.cache
+C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Data\obj\Debug\net9.0\ref\StoreApp.Data.dll
