@@ -1,8 +1,8 @@
-@model IEnumerable<ProductViewModel>
+@model ProductListViewModel
 
-<h5>Index Page</h5>
+<h1>Index Page</h1>
 
-@foreach (var product in Model)
+@foreach (var product in Model.Products)
 {
     <p>@product.Name</p>
     <p>@product.Price</p>

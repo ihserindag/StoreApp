@@ -146,3 +146,5 @@ C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Web\obj\Debug\net9.0\StoreApp
 C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Web\obj\Debug\net9.0\StoreApp.AB0980F6.Up2Date
 C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Web\bin\Debug\net9.0\StoreApp.Data.dll
 C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Web\bin\Debug\net9.0\StoreApp.Data.pdb
+C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Web\bin\Debug\net9.0\Npgsql.dll
+C:\Users\ibrahim\Desktop\asp.net\StoreApp\StoreApp.Web\bin\Debug\net9.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

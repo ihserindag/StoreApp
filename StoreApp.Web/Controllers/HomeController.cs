@@ -21,7 +21,8 @@ namespace StoreApp.Web.controllers
                Description=p.Description,
                Category=p.Category
             }).ToList();
-            return View(Products);
+
+            return View(new ProductListViewModel{Products=Products});
         }
     }
 }
