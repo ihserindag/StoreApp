@@ -2,6 +2,16 @@
 
 <h1>Index Page</h1>
 
+@if(Model.Products.Count()==0)
+{
+    <p>Ürün Bulunamadı</p>
+}
+else
+{
+    <h3>Ürünler</h3>
+}
+
+
 @foreach (var product in Model.Products)
 {
     <p>@product.Name</p>
@@ -9,3 +19,9 @@
     <p>@product.Description</p>
     <p>@product.Category</p>
 }
+
+
+
+<div page-model="Model.PageInfo" page-action="Index">
+
+</div>

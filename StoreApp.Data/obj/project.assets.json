@@ -3152,11 +3152,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ibrahim\\Desktop\\asp.net\\StoreApp\\StoreApp.Data\\StoreApp.Data.csproj",
+      "projectUniqueName": "c:\\Users\\ibrahim\\Desktop\\asp.net\\StoreApp\\StoreApp.Data\\StoreApp.Data.csproj",
       "projectName": "StoreApp.Data",
-      "projectPath": "C:\\Users\\ibrahim\\Desktop\\asp.net\\StoreApp\\StoreApp.Data\\StoreApp.Data.csproj",
+      "projectPath": "c:\\Users\\ibrahim\\Desktop\\asp.net\\StoreApp\\StoreApp.Data\\StoreApp.Data.csproj",
       "packagesPath": "C:\\Users\\ibrahim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ibrahim\\Desktop\\asp.net\\StoreApp\\StoreApp.Data\\obj\\",
+      "outputPath": "c:\\Users\\ibrahim\\Desktop\\asp.net\\StoreApp\\StoreApp.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ibrahim\\AppData\\Roaming\\NuGet\\NuGet.Config",
