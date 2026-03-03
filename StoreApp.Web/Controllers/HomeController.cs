@@ -1,46 +1,41 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using StoreApp.Data.Abstract;
 using StoreApp.Web.Models;
-namespace StoreApp.Web.controllers
 
+namespace StoreApp.Web.Controllers
 {
-    public class HomeController:Controller
+    public class HomeController : Controller
     {
-        public int pageSize=3;
-        private IStoreRepository _storeRepository;
-        public HomeController(IStoreRepository storeRepository)
+        public int pageSize = 3;
+        private readonly IStoreRepository _storeRepository;
+        private readonly IMapper _mapper;
+
+        public HomeController(IStoreRepository storeRepository, IMapper mapper)
         {
-            _storeRepository=storeRepository;
+            _storeRepository = storeRepository;
+            _mapper = mapper;
         }
-        
-        //localhost:5000/Home/Index?page=1
-        public async Task<IActionResult> Index(int page=1)
+
+        public IActionResult Index(string? category, int page = 1)
         {
-            var Products=_storeRepository
-            .Products
-            .Skip((page-1)*pageSize)
-            .Take(pageSize)
-            .Select(p=>
-                new ProductViewModel{
-                    Id=p.Id,
-                    Name=p.Name,
-                    Price=p.Price,
-                    Description=p.Description,
-                    Category=p.Category
-                }).ToList();
+            var totalItems = _storeRepository.GetProductCount(category);
+
+            var products = _storeRepository.GetProducts(category, page, pageSize);
+            var productViewModels = _mapper.Map<List<ProductViewModel>>(products);
 
             return View(
                 new ProductListViewModel
-            {
-                    Products=Products,
-                    PageInfo=new PageInfo
+                {
+                    Products = productViewModels,
+                    PageInfo = new PageInfo
                     {
-                        TotalItems=_storeRepository.Products.Count(),
-                        ItemsPerPage=pageSize,
-                        CurrentPage=page
+                        TotalItems = totalItems,
+                        ItemsPerPage = pageSize,
+                        CurrentPage = page
                     }
                 }
-                );
+            );
         }
     }
 }

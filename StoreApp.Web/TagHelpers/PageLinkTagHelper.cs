@@ -22,6 +22,14 @@ namespace StoreApp.Web.TagHelpers
 
         public PageInfo? PageModel { get; set; }
         public string? PageAction { get; set; }
+        public string PageClass { get; set; }=string.Empty;
+         public string PageClassLink { get; set; }=string.Empty;
+       
+        public string PageClassActive { get; set; }=string.Empty;
+
+        [HtmlAttributeName(DictionaryAttributePrefix = "page-url-")]
+        public Dictionary<string, object> PageUrlValues { get; set; } = new Dictionary<string, object>();
+
 
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
@@ -32,12 +40,14 @@ namespace StoreApp.Web.TagHelpers
 
             IUrlHelper urlHelper = _urlHelperFactory.GetUrlHelper(ViewContext);
 
+            TagBuilder div = new TagBuilder("div");
             for (int i = 1; i <= PageModel.TotalPages; i++)
             {
                 TagBuilder link = new TagBuilder("a");
-                link.AddCssClass("btn");
-                link.AddCssClass(i == PageModel.CurrentPage ? "btn-primary" : "btn-outline-primary");
-                link.Attributes["href"] = urlHelper.Action(PageAction, new { page = i }) ?? "#";
+                PageUrlValues["page"] = i;
+                link.Attributes["href"] = urlHelper.Action(PageAction, PageUrlValues);
+                link.AddCssClass(PageClass);
+                link.AddCssClass(i==PageModel.CurrentPage ? PageClassActive : PageClassLink);
                 link.InnerHtml.Append(i.ToString());
                 output.Content.AppendHtml(link);
             }

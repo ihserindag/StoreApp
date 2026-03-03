@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ibrahim\\Desktop\\asp.net\\StoreApp\\StoreApp.Web\\StoreApp.Web.csproj": {}
+    "C:\\Users\\ibrahim\\Desktop\\asp.net\\StoreApp\\storeapp.web\\StoreApp.Web.csproj": {}
   },
   "projects": {
     "C:\\Users\\ibrahim\\Desktop\\asp.net\\StoreApp\\StoreApp.Data\\StoreApp.Data.csproj": {
@@ -81,14 +81,14 @@
         }
       }
     },
-    "C:\\Users\\ibrahim\\Desktop\\asp.net\\StoreApp\\StoreApp.Web\\StoreApp.Web.csproj": {
+    "C:\\Users\\ibrahim\\Desktop\\asp.net\\StoreApp\\storeapp.web\\StoreApp.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ibrahim\\Desktop\\asp.net\\StoreApp\\StoreApp.Web\\StoreApp.Web.csproj",
+        "projectUniqueName": "C:\\Users\\ibrahim\\Desktop\\asp.net\\StoreApp\\storeapp.web\\StoreApp.Web.csproj",
         "projectName": "StoreApp.Web",
-        "projectPath": "C:\\Users\\ibrahim\\Desktop\\asp.net\\StoreApp\\StoreApp.Web\\StoreApp.Web.csproj",
+        "projectPath": "C:\\Users\\ibrahim\\Desktop\\asp.net\\StoreApp\\storeapp.web\\StoreApp.Web.csproj",
         "packagesPath": "C:\\Users\\ibrahim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ibrahim\\Desktop\\asp.net\\StoreApp\\StoreApp.Web\\obj\\",
+        "outputPath": "C:\\Users\\ibrahim\\Desktop\\asp.net\\StoreApp\\storeapp.web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ibrahim\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -127,6 +127,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[16.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",

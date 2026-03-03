@@ -21,6 +21,62 @@ namespace StoreApp.Web.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("StoreApp.Data.Concrete.Category", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Url")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Url")
+                        .IsUnique();
+
+                    b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Telefon",
+                            Url = "telefon"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Bilgisayar",
+                            Url = "bilgisayar"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Elektronik",
+                            Url = "elektronik"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "Beyaz Eşya",
+                            Url = "beyaz-esya"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Name = "Küçük Ev Aletleri",
+                            Url = "kucuk-ev-aletleri"
+                        });
+                });
+
             modelBuilder.Entity("StoreApp.Data.Concrete.Product", b =>
                 {
                     b.Property<int>("Id")
@@ -52,7 +108,7 @@ namespace StoreApp.Web.Migrations
                         new
                         {
                             Id = 1,
-                            Category = "Telefon",
+                            Category = "",
                             Description = "Güzel Telefon",
                             Name = "Samsung S25",
                             Price = 1000m
@@ -60,7 +116,7 @@ namespace StoreApp.Web.Migrations
                         new
                         {
                             Id = 2,
-                            Category = "Telefon",
+                            Category = "",
                             Description = "Güzel Telefon",
                             Name = "Samsung S24",
                             Price = 2000m
@@ -68,7 +124,7 @@ namespace StoreApp.Web.Migrations
                         new
                         {
                             Id = 3,
-                            Category = "Telefon",
+                            Category = "",
                             Description = "Güzel Telefon",
                             Name = "Samsung S23",
                             Price = 3000m
@@ -76,7 +132,7 @@ namespace StoreApp.Web.Migrations
                         new
                         {
                             Id = 4,
-                            Category = "Telefon",
+                            Category = "",
                             Description = "Güzel Telefon",
                             Name = "Samsung S22",
                             Price = 4000m
@@ -84,7 +140,7 @@ namespace StoreApp.Web.Migrations
                         new
                         {
                             Id = 5,
-                            Category = "Telefon",
+                            Category = "",
                             Description = "Güzel Telefon",
                             Name = "Samsung S21",
                             Price = 5000m
@@ -92,7 +148,7 @@ namespace StoreApp.Web.Migrations
                         new
                         {
                             Id = 6,
-                            Category = "Telefon",
+                            Category = "",
                             Description = "Güzel Telefon",
                             Name = "Samsung S20",
                             Price = 6000m
@@ -100,11 +156,78 @@ namespace StoreApp.Web.Migrations
                         new
                         {
                             Id = 7,
-                            Category = "Telefon",
+                            Category = "",
                             Description = "Güzel Telefon",
                             Name = "Samsung S10",
                             Price = 7000m
                         });
+                });
+
+            modelBuilder.Entity("StoreApp.Data.Concrete.ProductCategory", b =>
+                {
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("CategoryId", "ProductId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("ProductCategory");
+
+                    b.HasData(
+                        new
+                        {
+                            CategoryId = 1,
+                            ProductId = 1
+                        },
+                        new
+                        {
+                            CategoryId = 1,
+                            ProductId = 2
+                        },
+                        new
+                        {
+                            CategoryId = 2,
+                            ProductId = 3
+                        },
+                        new
+                        {
+                            CategoryId = 2,
+                            ProductId = 4
+                        },
+                        new
+                        {
+                            CategoryId = 3,
+                            ProductId = 5
+                        },
+                        new
+                        {
+                            CategoryId = 3,
+                            ProductId = 6
+                        },
+                        new
+                        {
+                            CategoryId = 2,
+                            ProductId = 7
+                        });
+                });
+
+            modelBuilder.Entity("StoreApp.Data.Concrete.ProductCategory", b =>
+                {
+                    b.HasOne("StoreApp.Data.Concrete.Category", null)
+                        .WithMany()
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("StoreApp.Data.Concrete.Product", null)
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }
